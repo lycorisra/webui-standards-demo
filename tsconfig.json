@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "useDefineForClassFields": true,
@@ -18,11 +19,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": [
-      "node",
-      "vite/client",
-      "unplugin-vue-define-options/macros-global"
-    ],
+    // "types": [
+    //   "node",
+    //   "vite/client",
+    //   "unplugin-vue-define-options/macros-global"
+    // ],
     "paths": {
       "@/*": ["src/*"]
     }

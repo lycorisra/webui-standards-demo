@@ -1,12 +1,12 @@
-import { createRouter,createWebHistory } from 'vue-router'
-import {routes} from './routes'
+import { createRouter, createWebHistory } from 'vue-router'
+import { routes } from './routes'
 
 const router = createRouter({
   routes,
-  history:createWebHistory()
+  history: createWebHistory()
 })
 
-router.onError = error =>{
+router.onError = (error: any) => () => {
   console.error('router error', error)
 }
 
